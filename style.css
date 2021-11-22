@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #818EA2;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body .container{
+    max-width: 1136px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.business-avatar{
+    width: 356px;
+    height: 200px;
+    position: relative;
+}
+
+.business-avatar img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+hr{
+    border-color: #C2CEDB;
+    margin-bottom: 1.1rem;
+}
+
+.business-card{
+    width: 100%;
+    overflow: hidden;
+}
+
+.business-desc{
+    position: relative;
+}
+
+.cmpny-ref
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+.property-tags span
+{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 2px 6px;
+    color: #818EA2;
+    border-color: #818EA2;
+}
+.property-stats p{
+    display: inline-block;
+    float: left;
+}
+.property-stats img{
+    display: inline;
+}
+
+.property-stats p b{
+    color: #171923;
+    padding-left: .3rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .property-tags
+    {
+        margin-top: 1rem;
+    }
+
+
+    .business-card{
+        /*width: 300px;*/
+    }
+    .business-avatar{
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .property-stats p{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .cmpny-ref
+    {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .cmpny-ref img{
+        width: 60px;
+    }
+
+    .business-desc{
+        padding-left: 0;
+    }
+
+}
